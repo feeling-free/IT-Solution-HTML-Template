@@ -55,8 +55,11 @@ a {
 }
 
 a {
-    color: #101010;
     text-decoration: none;
+}
+
+.btn a {
+    color: inherit;
 }
 
 a:focus,
@@ -69,7 +72,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     text-decoration: none;
-    color: #101010;
+    color: inherit;
 }
 
 .uppercase {

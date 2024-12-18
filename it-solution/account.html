@@ -52,72 +52,6 @@
 		body {
 			background-color: #f8f9fa;
 		}
-
-		.card-custom {
-			border-radius: 12px;
-			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		}
-
-		.status-paid {
-			color: green;
-			font-weight: bold;
-		}
-
-		.status-pending {
-			color: orange;
-			font-weight: bold;
-		}
-
-		.status-overdue {
-			color: red;
-			font-weight: bold;
-		}
-
-		.account-button {
-			border: 1px solid #ddd;
-			border-radius: 5px;
-			padding: 5px 18px;
-			transition: .5s;
-			position: absolute;
-			top: 20px;
-			z-index: 1;
-			right: 20px;
-		}
-
-		.account-button:before {
-			position: absolute;
-			content: "";
-			left: 0;
-			top: 0;
-			width: 0;
-			height: 100%;
-			background: #09aff3;
-			border-radius: 5px;
-			transition: .5s;
-			z-index: -1;
-		}
-
-		.account-button:hover:before {
-			width: 100%;
-		}
-
-		.account-button:hover a {
-			color: #fff;
-		}
-
-		.account-button a {
-			display: inline;
-			font-size: 17px;
-			line-height: 27px;
-			color: #0a0a0a;
-			font-weight: 400;
-			transition: .5s;
-		}
-
-		.account-button a span {
-			float: right;
-			padding-left: 15px;
-		}
 	</style>
 </head>
 
@@ -214,6 +148,7 @@
 									<li><a href="portfolio.html">Portfolio</a></li>
 									<li><a href="pricing.html">pricing</a></li>
 									<li><a href="account.html">Account</a></li>
+									<li><a href="account-edit.html">Account Edit</a></li>
 								</ul>
 							</li>
 							<li><a href="contact-us.html">Contact Us</a></li>
@@ -272,6 +207,7 @@
 							<li><a href="portfolio.html">Portfolio</a></li>
 							<li><a href="pricing.html">pricing</a></li>
 							<li><a href="account.html">Account</a></li>
+							<li><a href="account-edit.html">Account Edit</a></li>
 						</ul>
 					</li>
 					<li><a href="contact-us.html">Contact Us</a></li>
@@ -311,7 +247,7 @@
 
 
 	<!-- Main Container -->
-	<div class="account-section">
+	<div class="details-section account-section">
 		<div class="container py-5">
 			<div class="row g-4">
 				<!-- Account Details Section -->
@@ -333,9 +269,8 @@
 													class="bi bi-chevron-right"></i></span></a>
 									</div>
 								</div>
-								<div class="account-image" style="padding-top:80px">
-									<img src="assets/images/user-avatar.png" alt="User Avatar"
-										class="rounded-circle mb-2" style="width: 200px; object-fit: cover;">
+								<div class="account-image">
+									<img src="assets/images/user-avatar.png" alt="User Avatar" class="rounded-circle" />
 								</div>
 							</div>
 						</div>
@@ -347,9 +282,12 @@
 					<div class="card card-custom h-100">
 						<div class="card-body">
 							<h4 class="card-title mb-4">Subscription Info</h4>
-							<p><strong>Plan:</strong> Premium</p>
-							<p><strong>Renewal Date:</strong> June 30, 2024</p>
-							<p><strong>Status:</strong> <span class="status-paid">Active</span></p>
+							<p><strong>Next Billing Date:</strong> June 30, 2025</p>
+							<p><strong>Status:</strong> <span class="status-paid">Paid Subscription</span></p>
+
+							<div class="subscription-button">
+								<a class="submit" href="account-register.html">Subscribe!</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -363,36 +301,40 @@
 								<table class="table table-bordered">
 									<thead class="table-dark">
 										<tr>
-											<th>Invoice ID</th>
-											<th>Date</th>
-											<th>Amount</th>
-											<th>Status</th>
+											<th>Amount Paid</th>
+											<th>Last 4 Digits of Card</th>
+											<th>Date Charged</th>
+											<th>Is Paid</th>
+											<th>Invoice URL</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>INV-001</td>
-											<td>2024-05-01</td>
-											<td>$120.50</td>
+											<td>$40.00</td>
+											<td>4242</td>
+											<td>11/26/2024 12:21:38 AM</td>
 											<td class="status-paid">Paid</td>
+											<td class="text-center"><a
+													href="https://pay.stripe.com/invoice/acct_1P44kNFNpeM57t6x/test_YWNjdF8xUDQ0a05GTnBlTTU3dDZ4LF9SSGw2UHBRNGY3MmtMNTFLeTExTDdTdjRmV0oyd2NXLDEyNTA1Mjc5Mg0200AcDgCOIN/pdf?s=ap"><i
+														class="bi bi-download"></i></a></td>
 										</tr>
 										<tr>
-											<td>INV-002</td>
-											<td>2024-05-10</td>
-											<td>$250.00</td>
+											<td>$40.00</td>
+											<td>4242</td>
+											<td>10/26/2024 12:21:36 AM</td>
 											<td class="status-pending">Pending</td>
+											<td class="text-center"><a
+													href="https://pay.stripe.com/invoice/acct_1P44kNFNpeM57t6x/test_YWNjdF8xUDQ0a05GTnBlTTU3dDZ4LF9SSGw2UHBRNGY3MmtMNTFLeTExTDdTdjRmV0oyd2NXLDEyNTA1Mjc5Mg0200AcDgCOIN/pdf?s=ap"><i
+														class="bi bi-download"></i></a></td>
 										</tr>
 										<tr>
-											<td>INV-003</td>
-											<td>2024-05-20</td>
-											<td>$300.75</td>
+											<td>$40.00</td>
+											<td>4242</td>
+											<td>9/25/2024 11:20:36 PM</td>
 											<td class="status-overdue">Overdue</td>
-										</tr>
-										<tr>
-											<td>INV-004</td>
-											<td>2024-06-01</td>
-											<td>$150.00</td>
-											<td class="status-paid">Paid</td>
+											<td class="text-center"><a
+													href="https://pay.stripe.com/invoice/acct_1P44kNFNpeM57t6x/test_YWNjdF8xUDQ0a05GTnBlTTU3dDZ4LF9SSGw2UHBRNGY3MmtMNTFLeTExTDdTdjRmV0oyd2NXLDEyNTA1Mjc5Mg0200AcDgCOIN/pdf?s=ap"><i
+														class="bi bi-download"></i></a></td>
 										</tr>
 									</tbody>
 								</table>

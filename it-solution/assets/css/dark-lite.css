@@ -397,8 +397,9 @@ body.dark-theme {
     color: #FFFF;
 }
 
-.dark-theme .form-box input {
+.dark-theme .form-box input, .dark-theme .form-box select {
     background-color: #102346;
+    color: #ffff;
 }
 
 .dark-theme .form-box textarea {
@@ -423,7 +424,7 @@ body.dark-theme {
 }
 
 /* service-details section css*/
-.dark-theme .service-details-section {
+.dark-theme .details-section, .dark-theme .service-details-section {
     background: #0F193F;
 }
 
@@ -666,3 +667,67 @@ body.dark-theme {
     color: #a8aeb3;
 }
 
+/* Account page dark theme styles */
+.dark-theme .card-custom {
+    background: #12254A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .card-title {
+    color: #FFFFFF;
+}
+
+.dark-theme .card-body p {
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.dark-theme .account-button {
+    border-color: #09aff3;
+}
+
+.dark-theme .account-button a {
+    color: #09aff3;
+}
+
+.dark-theme .account-button:hover a {
+    color: #FFFFFF;
+}
+
+.dark-theme .table {
+    color: #FFFFFF;
+}
+
+.dark-theme .table-dark {
+    background-color: #0F193F;
+    border-color: #09aff3;
+}
+
+.dark-theme .table-bordered {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .table td {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Preserve status colors but slightly adjusted for dark theme */
+.dark-theme .status-paid {
+    color: #4CAF50;
+}
+
+.dark-theme .status-pending {
+    color: #FFA726;
+}
+
+.dark-theme .status-overdue {
+    color: #EF5350;
+}
+
+.dark-theme .bi-download {
+    color: #FFFFFF;
+}
+
+.dark-theme .bi-download:hover {
+    color: #09aff3;
+}

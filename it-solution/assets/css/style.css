@@ -4178,46 +4178,163 @@ div#particles .slider-thumb {
     width: 100%;
 }
 
+/* Account page styles */
 
 
+.card-custom {
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.status-paid {
+    color: green;
+    font-weight: bold;
+}
 
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
 
+.status-overdue {
+    color: red;
+    font-weight: bold;
+}
 
+.account-button {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 18px;
+    transition: .5s;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    right: 20px;
+}
 
+.account-button:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #09aff3;
+    border-radius: 5px;
+    transition: .5s;
+    z-index: -1;
+}
 
+.account-button:hover:before {
+    width: 100%;
+}
 
+.account-button:hover a {
+    color: #fff;
+}
 
+.account-button a {
+    display: inline;
+    font-size: 17px;
+    line-height: 27px;
+    color: #0a0a0a;
+    font-weight: 400;
+    transition: .5s;
+}
 
+.account-button a span {
+    float: right;
+    padding-left: 15px;
+}
 
+.account-image {
+    padding-top: 80px;
+}
 
+.account-image img {
+    width: 200px;
+    object-fit: cover;
+}
 
+.subscription-button a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Jost";
+    background: #09aff3;
+    padding: 10px 16px;
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 
+.subscription-button a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    left: 0;
+    border-bottom: 55px solid #0a0a0a;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
 
+.subscription-button a:hover:before {
+	-webkit-transform: translateX(-40%);
+	transform: translateX(-40%);
+}
 
+.subscription-button a::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #0a0a0a;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
 
+.subscription-button a:hover::after {
+	-webkit-transform: translateX(40%);
+	transform: translateX(40%);
+}
 
+.form-box select {
+    height: 60px;
+    width: 99%;
+    margin-bottom: 30px;
+    padding: 0 25px;
+    outline: 0;
+    border: 1px solid #f0f1f2;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #f0f1f2;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.account-section button.submit {
+    display: block;
+    margin: auto;
+}

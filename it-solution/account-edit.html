@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Account Edit Page</title>
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all">
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all">
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all">
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all">
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all">
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css" media="all">
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all">
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css" media="all">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
+	<!-- modernizr js -->
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- dark lite css -->
+	<link rel="stylesheet" href="assets/css/dark-lite.css" type="text/css">
+
+	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
+
+	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<!-- <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  /> -->
+	<style>
+		/* Custom styles */
+		body {
+			background-color: #f8f9fa;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<!-- loder -->
+	<div class="loader-wrapper">
+		<div class="loader"></div>
+		<div class="loder-section left-section"></div>
+		<div class="loder-section right-section"></div>
+	</div>
+
+
+	<!--==================================================-->
+	<!-- Start Curser Section Here -->
+	<!--==================================================-->
+	<div class="curser"></div>
+	<div class="curser2"></div>
+	<!--==================================================-->
+	<!-- Ends Curser Section Here -->
+	<!--==================================================-->
+
+
+
+	<!--==================================================-->
+	<!-- Start Search Popup Area -->
+	<!--==================================================-->
+	<div class="search-popup">
+		<button class="close-search style-two"><i class="fas fa-times"></i></button>
+		<form method="post" action="#">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</div>
+		</form>
+	</div>
+	<!--==================================================-->
+	<!-- End Search Popup Area -->
+	<!--==================================================-->
+
+
+
+
+	<!--==================================================-->
+	<!-- Start it solution Main Menu  -->
+	<!--==================================================-->
+
+	<div id="sticky-header" class="it-solution_nav_manu">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-2">
+					<div class="logo">
+						<a class="logo_img" href="index.html" title="it-solution">
+							<img src="assets/images/logo2.png" alt="logo">
+						</a>
+						<a class="main_sticky" href="index.html" title="it-solution">
+							<img src="assets/images/logo.png" alt="logo">
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-10">
+					<nav class="it-solution_menu style-two">
+						<ul class="nav_scroll">
+							<li class="up"><a href="index.html">Home <span><i class="fas fa-plus"></i></span></a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
+								<ul class="sub-menu">
+									<li><a href="services.html">Services</a></li>
+									<li><a href="services-details.html">Services Details</a></li>
+								</ul>
+							</li>
+							<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
+								<ul class="sub-menu">
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="portfolio-details.html">Portfolio Details</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">Blog <span><i class="fas fa-plus"></i></span></a>
+								<ul class="sub-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="blog-list.html">Blog List</a></li>
+									<li><a href="blog-2column.html">Blog 2Column</a></li>
+									<li><a href="blog-details.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
+								<ul class="sub-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="services-details.html">Services Details</a></li>
+									<li><a href="team.html">Team</a></li>
+									<li><a href="testimonial.html">Testimonial</a></li>
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="pricing.html">pricing</a></li>
+									<li><a href="account.html">Account</a></li>
+									<li><a href="account-edit.html">Account Edit</a></li>
+								</ul>
+							</li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+						<!-- headerm search button -->
+						<div class="header-button">
+							<div class="header-src-btn">
+								<div class="search-box-btn search-box-outer style-two"><i class="fas fa-search"></i>
+								</div>
+							</div>
+
+						</div>
+						<!-- headerm light button -->
+						<!-- headerm light button -->
+						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- dream-hub Mobile Menu  -->
+	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
+		<div class="mobile-menu">
+			<nav class="it-solution_menu">
+				<ul class="nav_scroll">
+					<li class="up"><a href="index.html">Home <span><i class="fas fa-plus"></i></span></a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="services.html">Services</a></li>
+							<li><a href="services-details.html">Services Details</a></li>
+						</ul>
+					</li>
+					<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="portfolio-details.html">Portfolio Details</a></li>
+						</ul>
+					</li>
+					<li><a href="index.html">Blog <span><i class="fas fa-plus"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="blog-list.html">Blog List</a></li>
+							<li><a href="blog-2column.html">Blog 2Column</a></li>
+							<li><a href="blog-details.html">Blog Details</a></li>
+						</ul>
+					</li>
+					<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="services-details.html">Services Details</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="testimonial.html">Testimonial</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="pricing.html">pricing</a></li>
+							<li><a href="account.html">Account</a></li>
+									<li><a href="account-edit.html">Account Edit</a></li>
+						</ul>
+					</li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!--==================================================-->
+	<!-- End it solution Main Menu  -->
+	<!--==================================================-->
+
+
+
+
+	<!--==================================================-->
+	<!-- Start it solution breadcumb Section  -->
+	<!--==================================================-->
+
+	<div class="breadcumb-section d-flex align-items-center">
+		<div class="container">
+			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
+				<div class="col-lg-12">
+					<div class="breadcumb-container text-center">
+						<div class="breadcumb-title">
+							<h1>Account Edit</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--==================================================-->
+	<!-- End it solution breadcumb Section  -->
+	<!--==================================================-->
+
+
+	<!-- Main Container -->
+	<div class="details-section account-section">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-4 mb-4">
+					<div class="card card-custom avatar-card">
+						<div class="card-body">
+							<div class="text-center">
+								<div class="account-image" style="padding-top: 0;">
+									<img src="assets/images/user-avatar.png" alt="User Avatar" class="rounded-circle" />
+								</div>
+								<p>lucky.charge.x@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="card card-custom">
+						<div class="card-body">
+							<h4 class="card-title mb-4">Account Details</h4>
+							<form action="/Account/Update" method="post" data-cue="slideInUp" data-duration="2000"
+								data-show="true"
+								style="animation-name: slideInUp; animation-duration: 2000ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<div class="form-box">
+											<input type="text" name="Username" placeholder="Username" value="LCAdmin"
+												required="">
+											<i class="fas fa-user-circle"></i>
+										</div>
+										<div class="form-box">
+											<input type="text" name="FirstName" placeholder="First Name" value="Lucky"
+												required="">
+											<i class="fas fa-user"></i>
+										</div>
+										<div class="form-box">
+											<input type="text" name="LastName" placeholder="Last Name" value="Charge"
+												required="">
+											<i class="fas fa-user"></i>
+										</div>
+										<div class="form-box">
+											<input type="text" name="Phone" placeholder="Phone" value="0000000000"
+												required="">
+											<i class="bi bi-telephone-fill"></i>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="form-box">
+											<select data-val="true"
+												data-val-number="The field TimezoneOffset must be a number."
+												data-val-required="The TimezoneOffset field is required."
+												id="TimezoneOffset" name="TimezoneOffset">
+												<option value="-12">Baker Island Time</option>
+												<option value="-11">Niue Time</option>
+												<option value="-10">Hawaii-Aleutian Standard Time</option>
+												<option value="-9">Alaska Standard Time</option>
+												<option value="-8">Pacific Standard Time</option>
+												<option value="-7">Mountain Standard Time</option>
+												<option value="-6">Central Standard Time</option>
+												<option value="-5">Eastern Standard Time</option>
+												<option selected="selected" value="-4">Atlantic Standard Time</option>
+												<option value="-3">Argentina Time</option>
+												<option value="-2">South Georgia Time</option>
+												<option value="-1">Azores Standard Time</option>
+												<option value="0">Greenwich Mean Time</option>
+												<option value="1">Central European Time</option>
+												<option value="2">Eastern European Time</option>
+												<option value="3">Moscow Standard Time</option>
+												<option value="4">Gulf Standard Time</option>
+												<option value="5">Pakistan Standard Time</option>
+												<option value="6">Bangladesh Standard Time</option>
+												<option value="7">Indochina Time</option>
+												<option value="8">China Standard Time</option>
+												<option value="9">Japan Standard Time</option>
+												<option value="10">Australian Eastern Standard Time</option>
+												<option value="11">Solomon Islands Time</option>
+												<option value="12">Fiji Time</option>
+											</select>
+											<i class=" bi bi-caret-down"></i>
+										</div>
+										<div class="form-box">
+											<input type="text" name="City" placeholder="City" value="Parsippany"
+												required="">
+											<i class="fas fa-city"></i>
+										</div>
+										<div class="form-box">
+											<input type="text" name="Region" placeholder="Region" value="NJ"
+												required="">
+											<i class="fas fa-map"></i>
+										</div>
+										<div class="form-box">
+											<select id="country" name="country" value="USA" required="">
+												<option value="USA" selected="">USA</option>
+												<option value="United States">United States</option>
+												<option value="Afghanistan">Afghanistan</option>
+												<option value="Åland Islands">Åland Islands</option>
+												<option value="Albania">Albania</option>
+												<option value="Algeria">Algeria</option>
+												<option value="American Samoa">American Samoa</option>
+												<option value="Andorra">Andorra</option>
+												<option value="Angola">Angola</option>
+												<option value="Anguilla">Anguilla</option>
+												<option value="Antarctica">Antarctica</option>
+												<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+												<option value="Argentina">Argentina</option>
+												<option value="Armenia">Armenia</option>
+												<option value="Aruba">Aruba</option>
+												<option value="Australia">Australia</option>
+												<option value="Austria">Austria</option>
+												<option value="Azerbaijan">Azerbaijan</option>
+												<option value="Bahamas">Bahamas</option>
+												<option value="Bahrain">Bahrain</option>
+												<option value="Bangladesh">Bangladesh</option>
+												<option value="Barbados">Barbados</option>
+												<option value="Belarus">Belarus</option>
+												<option value="Belgium">Belgium</option>
+												<option value="Belize">Belize</option>
+												<option value="Benin">Benin</option>
+												<option value="Bermuda">Bermuda</option>
+												<option value="Bhutan">Bhutan</option>
+												<option value="Bolivia">Bolivia</option>
+												<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+												<option value="Botswana">Botswana</option>
+												<option value="Bouvet Island">Bouvet Island</option>
+												<option value="Brazil">Brazil</option>
+												<option value="British Indian Ocean Territory">British Indian Ocean
+													Territory
+												</option>
+												<option value="Brunei Darussalam">Brunei Darussalam</option>
+												<option value="Bulgaria">Bulgaria</option>
+												<option value="Burkina Faso">Burkina Faso</option>
+												<option value="Burundi">Burundi</option>
+												<option value="Cambodia">Cambodia</option>
+												<option value="Cameroon">Cameroon</option>
+												<option value="Canada">Canada</option>
+												<option value="Cape Verde">Cape Verde</option>
+												<option value="Cayman Islands">Cayman Islands</option>
+												<option value="Central African Republic">Central African Republic
+												</option>
+												<option value="Chad">Chad</option>
+												<option value="Chile">Chile</option>
+												<option value="China">China</option>
+												<option value="Christmas Island">Christmas Island</option>
+												<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+												<option value="Colombia">Colombia</option>
+												<option value="Comoros">Comoros</option>
+												<option value="Congo">Congo</option>
+												<option value="Congo, The Democratic Republic of The">Congo, The
+													Democratic
+													Republic of The</option>
+												<option value="Cook Islands">Cook Islands</option>
+												<option value="Costa Rica">Costa Rica</option>
+												<option value="Cote D'ivoire">Cote D'ivoire</option>
+												<option value="Croatia">Croatia</option>
+												<option value="Cuba">Cuba</option>
+												<option value="Cyprus">Cyprus</option>
+												<option value="Czech Republic">Czech Republic</option>
+												<option value="Denmark">Denmark</option>
+												<option value="Djibouti">Djibouti</option>
+												<option value="Dominica">Dominica</option>
+												<option value="Dominican Republic">Dominican Republic</option>
+												<option value="Ecuador">Ecuador</option>
+												<option value="Egypt">Egypt</option>
+												<option value="El Salvador">El Salvador</option>
+												<option value="Equatorial Guinea">Equatorial Guinea</option>
+												<option value="Eritrea">Eritrea</option>
+												<option value="Estonia">Estonia</option>
+												<option value="Ethiopia">Ethiopia</option>
+												<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)
+												</option>
+												<option value="Faroe Islands">Faroe Islands</option>
+												<option value="Fiji">Fiji</option>
+												<option value="Finland">Finland</option>
+												<option value="France">France</option>
+												<option value="French Guiana">French Guiana</option>
+												<option value="French Polynesia">French Polynesia</option>
+												<option value="French Southern Territories">French Southern Territories
+												</option>
+												<option value="Gabon">Gabon</option>
+												<option value="Gambia">Gambia</option>
+												<option value="Georgia">Georgia</option>
+												<option value="Germany">Germany</option>
+												<option value="Ghana">Ghana</option>
+												<option value="Gibraltar">Gibraltar</option>
+												<option value="Greece">Greece</option>
+												<option value="Greenland">Greenland</option>
+												<option value="Grenada">Grenada</option>
+												<option value="Guadeloupe">Guadeloupe</option>
+												<option value="Guam">Guam</option>
+												<option value="Guatemala">Guatemala</option>
+												<option value="Guernsey">Guernsey</option>
+												<option value="Guinea">Guinea</option>
+												<option value="Guinea-bissau">Guinea-bissau</option>
+												<option value="Guyana">Guyana</option>
+												<option value="Haiti">Haiti</option>
+												<option value="Heard Island and Mcdonald Islands">Heard Island and
+													Mcdonald
+													Islands</option>
+												<option value="Holy See (Vatican City State)">Holy See (Vatican City
+													State)
+												</option>
+												<option value="Honduras">Honduras</option>
+												<option value="Hong Kong">Hong Kong</option>
+												<option value="Hungary">Hungary</option>
+												<option value="Iceland">Iceland</option>
+												<option value="India">India</option>
+												<option value="Indonesia">Indonesia</option>
+												<option value="Iran, Islamic Republic of">Iran, Islamic Republic of
+												</option>
+												<option value="Iraq">Iraq</option>
+												<option value="Ireland">Ireland</option>
+												<option value="Isle of Man">Isle of Man</option>
+												<option value="Israel">Israel</option>
+												<option value="Italy">Italy</option>
+												<option value="Jamaica">Jamaica</option>
+												<option value="Japan">Japan</option>
+												<option value="Jersey">Jersey</option>
+												<option value="Jordan">Jordan</option>
+												<option value="Kazakhstan">Kazakhstan</option>
+												<option value="Kenya">Kenya</option>
+												<option value="Kiribati">Kiribati</option>
+												<option value="Korea, Democratic People's Republic of">Korea, Democratic
+													People's Republic of</option>
+												<option value="Korea, Republic of">Korea, Republic of</option>
+												<option value="Kuwait">Kuwait</option>
+												<option value="Kyrgyzstan">Kyrgyzstan</option>
+												<option value="Lao People's Democratic Republic">Lao People's Democratic
+													Republic</option>
+												<option value="Latvia">Latvia</option>
+												<option value="Lebanon">Lebanon</option>
+												<option value="Lesotho">Lesotho</option>
+												<option value="Liberia">Liberia</option>
+												<option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+												<option value="Liechtenstein">Liechtenstein</option>
+												<option value="Lithuania">Lithuania</option>
+												<option value="Luxembourg">Luxembourg</option>
+												<option value="Macao">Macao</option>
+												<option value="Macedonia, The Former Yugoslav Republic of">Macedonia,
+													The
+													Former
+													Yugoslav Republic of</option>
+												<option value="Madagascar">Madagascar</option>
+												<option value="Malawi">Malawi</option>
+												<option value="Malaysia">Malaysia</option>
+												<option value="Maldives">Maldives</option>
+												<option value="Mali">Mali</option>
+												<option value="Malta">Malta</option>
+												<option value="Marshall Islands">Marshall Islands</option>
+												<option value="Martinique">Martinique</option>
+												<option value="Mauritania">Mauritania</option>
+												<option value="Mauritius">Mauritius</option>
+												<option value="Mayotte">Mayotte</option>
+												<option value="Mexico">Mexico</option>
+												<option value="Micronesia, Federated States of">Micronesia, Federated
+													States
+													of
+												</option>
+												<option value="Moldova, Republic of">Moldova, Republic of</option>
+												<option value="Monaco">Monaco</option>
+												<option value="Mongolia">Mongolia</option>
+												<option value="Montenegro">Montenegro</option>
+												<option value="Montserrat">Montserrat</option>
+												<option value="Morocco">Morocco</option>
+												<option value="Mozambique">Mozambique</option>
+												<option value="Myanmar">Myanmar</option>
+												<option value="Namibia">Namibia</option>
+												<option value="Nauru">Nauru</option>
+												<option value="Nepal">Nepal</option>
+												<option value="Netherlands">Netherlands</option>
+												<option value="Netherlands Antilles">Netherlands Antilles</option>
+												<option value="New Caledonia">New Caledonia</option>
+												<option value="New Zealand">New Zealand</option>
+												<option value="Nicaragua">Nicaragua</option>
+												<option value="Niger">Niger</option>
+												<option value="Nigeria">Nigeria</option>
+												<option value="Niue">Niue</option>
+												<option value="Norfolk Island">Norfolk Island</option>
+												<option value="Northern Mariana Islands">Northern Mariana Islands
+												</option>
+												<option value="Norway">Norway</option>
+												<option value="Oman">Oman</option>
+												<option value="Pakistan">Pakistan</option>
+												<option value="Palau">Palau</option>
+												<option value="Palestinian Territory, Occupied">Palestinian Territory,
+													Occupied
+												</option>
+												<option value="Panama">Panama</option>
+												<option value="Papua New Guinea">Papua New Guinea</option>
+												<option value="Paraguay">Paraguay</option>
+												<option value="Peru">Peru</option>
+												<option value="Philippines">Philippines</option>
+												<option value="Pitcairn">Pitcairn</option>
+												<option value="Poland">Poland</option>
+												<option value="Portugal">Portugal</option>
+												<option value="Puerto Rico">Puerto Rico</option>
+												<option value="Qatar">Qatar</option>
+												<option value="Reunion">Reunion</option>
+												<option value="Romania">Romania</option>
+												<option value="Russian Federation">Russian Federation</option>
+												<option value="Rwanda">Rwanda</option>
+												<option value="Saint Helena">Saint Helena</option>
+												<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+												<option value="Saint Lucia">Saint Lucia</option>
+												<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon
+												</option>
+												<option value="Saint Vincent and The Grenadines">Saint Vincent and The
+													Grenadines</option>
+												<option value="Samoa">Samoa</option>
+												<option value="San Marino">San Marino</option>
+												<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+												<option value="Saudi Arabia">Saudi Arabia</option>
+												<option value="Senegal">Senegal</option>
+												<option value="Serbia">Serbia</option>
+												<option value="Seychelles">Seychelles</option>
+												<option value="Sierra Leone">Sierra Leone</option>
+												<option value="Singapore">Singapore</option>
+												<option value="Slovakia">Slovakia</option>
+												<option value="Slovenia">Slovenia</option>
+												<option value="Solomon Islands">Solomon Islands</option>
+												<option value="Somalia">Somalia</option>
+												<option value="South Africa">South Africa</option>
+												<option value="South Georgia and The South Sandwich Islands">South
+													Georgia
+													and
+													The South Sandwich Islands</option>
+												<option value="Spain">Spain</option>
+												<option value="Sri Lanka">Sri Lanka</option>
+												<option value="Sudan">Sudan</option>
+												<option value="Suriname">Suriname</option>
+												<option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+												<option value="Swaziland">Swaziland</option>
+												<option value="Sweden">Sweden</option>
+												<option value="Switzerland">Switzerland</option>
+												<option value="Syrian Arab Republic">Syrian Arab Republic</option>
+												<option value="Taiwan">Taiwan</option>
+												<option value="Tajikistan">Tajikistan</option>
+												<option value="Tanzania, United Republic of">Tanzania, United Republic
+													of
+												</option>
+												<option value="Thailand">Thailand</option>
+												<option value="Timor-leste">Timor-leste</option>
+												<option value="Togo">Togo</option>
+												<option value="Tokelau">Tokelau</option>
+												<option value="Tonga">Tonga</option>
+												<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+												<option value="Tunisia">Tunisia</option>
+												<option value="Turkey">Turkey</option>
+												<option value="Turkmenistan">Turkmenistan</option>
+												<option value="Turks and Caicos Islands">Turks and Caicos Islands
+												</option>
+												<option value="Tuvalu">Tuvalu</option>
+												<option value="Uganda">Uganda</option>
+												<option value="Ukraine">Ukraine</option>
+												<option value="United Arab Emirates">United Arab Emirates</option>
+												<option value="United Kingdom">United Kingdom</option>
+												<option value="United States">United States</option>
+												<option value="United States Minor Outlying Islands">United States Minor
+													Outlying Islands</option>
+												<option value="Uruguay">Uruguay</option>
+												<option value="Uzbekistan">Uzbekistan</option>
+												<option value="Vanuatu">Vanuatu</option>
+												<option value="Venezuela">Venezuela</option>
+												<option value="Viet Nam">Viet Nam</option>
+												<option value="Virgin Islands, British">Virgin Islands, British</option>
+												<option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+												<option value="Wallis and Futuna">Wallis and Futuna</option>
+												<option value="Western Sahara">Western Sahara</option>
+												<option value="Yemen">Yemen</option>
+												<option value="Zambia">Zambia</option>
+												<option value="Zimbabwe">Zimbabwe</option>
+											</select>
+											<i class=" bi bi-caret-down"></i>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-box">
+											<button type="submit" class="submit">Submit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--==================================================-->
+		<!-- Start it solution footer Section  -->
+		<!--==================================================-->
+
+		<div class="footer-section">
+			<div class="container">
+				<div class="row" data-cues="slideInUp" data-duration="2000">
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-logo">
+							<a href="#"><img src="assets/images/resource/footer-logo.png" alt="bg"></a>
+						</div>
+						<div class="footer-widget-description">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing
+								Voluptatibus facerei possimus dignissimos, aliquam
+								nobis eaque? Voluptatem magnam</p>
+						</div>
+						<div class="footer-social-icon">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="bi bi-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6">
+						<div class="footer-widget-content">
+							<div class="footer-widget-title">
+								<h3>Help Links</h3>
+							</div>
+							<div class="footer-widget-menu">
+								<ul>
+									<li><a href="#"><i class="bi bi-arrow-right"></i> Customers Services</a></li>
+									<li><a href="#"><i class="bi bi-arrow-right"></i> IT Department</a></li>
+									<li><a href="#"><i class="bi bi-arrow-right"></i> About Our Company</a></li>
+									<li><a href="#"><i class="bi bi-arrow-right"></i> Business Growth</a></li>
+									<li><a href="#"><i class="bi bi-arrow-right"></i> Make An Appointment</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-widget-content">
+							<div class="footer-widget-title-left">
+								<h3>Official info</h3>
+							</div>
+							<div class="icon-box">
+								<div class="widget-icon-box">
+									<div class="widget-icon">
+										<i class="bi bi-telephone"></i>
+									</div>
+								</div>
+								<div class="icon-box-content">
+									<p>For Rental Call</p>
+									<h4>+125 456 456</h4>
+								</div>
+							</div>
+							<div class="icon-box">
+								<div class="widget-icon-box">
+									<div class="widget-icon">
+										<i class="bi bi-chat-dots"></i>
+									</div>
+								</div>
+								<div class="icon-box-content">
+									<p>Send us Email</p>
+									<h4>support@ito.com</h4>
+								</div>
+							</div>
+							<div class="icon-box">
+								<div class="widget-icon-box">
+									<div class="widget-icon">
+										<i class="bi bi-geo-alt"></i>
+									</div>
+								</div>
+								<div class="icon-box-content">
+									<p>Address</p>
+									<h4>+880 Ulipur.Kurigram</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="footer-widget-content">
+							<div class="footer-widget-title-left">
+								<h3>Photo Gallery</h3>
+							</div>
+							<div class="photo-gallery-img-list">
+								<ul>
+									<li><a href="#"><img src="assets/images/resource/photo-img.png" alt="img"></a></li>
+									<li><a href="#"><img src="assets/images/resource/photo-img1.png" alt="img"></a></li>
+									<li><a href="#"><img src="assets/images/resource/photo-img2.png" alt="img"></a></li>
+									<li><a href="#"><img src="assets/images/resource/photo-img3.png" alt="img"></a></li>
+									<li><a href="#"><img src="assets/images/resource/photo-img4.png" alt="img"></a></li>
+									<li><a href="#"><img src="assets/images/resource/photo-img5.png" alt="img"></a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==================================================-->
+		<!-- End it solution footer Section  -->
+		<!--==================================================-->
+
+
+
+
+
+		<!--==================================================-->
+		<!-- Start it solution copyright Section  -->
+		<!--==================================================-->
+
+		<div class="copyright-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="copyright-description text-center">
+							<p>© 2023 IT-Perch – <span>Dream-IT</span>. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--==================================================-->
+		<!-- Start it solution copyright Section  -->
+		<!--==================================================-->
+
+
+
+
+		<!--==================================================-->
+		<!-- Start scrollup section Section -->
+		<!--==================================================-->
+
+		<div class="prgoress_indicator active-progress">
+			<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+				<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+					style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 270.456;">
+				</path>
+			</svg>
+		</div>
+
+
+		<!-- Bootstrap JS Bundle -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+		<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+
+		<script src="assets/js/popper.min.js"></script>
+
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="assets/js/jquery.counterup.min.js"></script>
+
+		<script src="assets/js/waypoints.min.js"></script>
+
+		<script src="assets/js/wow.js"></script>
+
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+
+		<script src="venobox/venobox.js"></script>
+
+		<script src="assets/js/animated-text.js"></script>
+
+		<script src="venobox/venobox.min.js"></script>
+
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+
+		<script src="assets/js/jquery.meanmenu.js"></script>
+
+		<script src="assets/js/jquery.scrollUp.js"></script>
+
+		<script src="assets/js/jquery.barfiller.js"></script>
+
+		<script src="assets/js/vanilla-tilt.min.js"></script>
+
+		<script src="assets/js/dark-lite.js"></script>
+
+		<script src="assets/js/scrollCue.min.js"></script>
+
+		<script src="assets/js/particls.js"></script>
+
+		<script src="assets/js/theme.js"></script>
+</body>
+
+</html>
