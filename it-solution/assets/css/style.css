@@ -413,7 +413,7 @@ nav.it-solution_menu.style-two ul li a {
     display: inline;
 }
 
-.section-button a {
+.section-button button, .section-button a {
     display: inline-block;
     font-size: 18px;
     color: #ffffff;
@@ -426,16 +426,18 @@ nav.it-solution_menu.style-two ul li a {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border: none;
+    vertical-align: top;
 }
 
-.section-button a:before {
+.section-button button:before, .section-button a:before {
     position: absolute;
     content: "";
     top: 0;
     bottom: 0;
     right: -50px;
     left: 0;
-    border-bottom: 55px solid #0a0a0a;
+    border-bottom: 55px solid #111b46;
     border-right: 30px solid transparent;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -447,12 +449,12 @@ nav.it-solution_menu.style-two ul li a {
     z-index: -1;
 }
 
-.section-button a:hover:before {
+.section-button button:hover:before, .section-button a:hover:before {
 	-webkit-transform: translateX(-40%);
 	transform: translateX(-40%);
   }
 
-.section-button a::after {
+.section-button button::after, .section-button a::after {
     position: absolute;
     content: "";
     top: 0;
@@ -460,7 +462,7 @@ nav.it-solution_menu.style-two ul li a {
     right: 0px;
     left: -50px;
     border-left: 30px solid transparent;
-    border-bottom: 55px solid #0a0a0a;
+    border-bottom: 55px solid #111b46;
     -webkit-transition: all 600ms ease;
     -moz-transition: all 600ms ease;
     -ms-transition: all 600ms ease;
@@ -471,12 +473,12 @@ nav.it-solution_menu.style-two ul li a {
     z-index: -1;
 }
 
-.section-button a:hover::after {
+.section-button button:hover::after, .section-button a:hover::after {
 	-webkit-transform: translateX(40%);
 	transform: translateX(40%);
   }
 
-.section-button.up a {
+.section-button.up button, .section-button.up a {
     display: inline-block;
     background: no-repeat;
     border: 1px solid #09aff3;
@@ -4332,9 +4334,4 @@ div#particles .slider-thumb {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-}
-
-.account-section button.submit {
-    display: block;
-    margin: auto;
 }
